@@ -47,8 +47,8 @@ void setup()
 
 void loop()
 {
-  keysRead();
-  //  keysWrite(keys);
+  Serial.println(keysRead(), BIN);
+  keysWrite(keysRead());
 }
 
 void keysWrite(int keydata)
@@ -61,26 +61,29 @@ void keysWrite(int keydata)
     shiftOut(SER, SRCLK, LSBFIRST, keydata >> 8);
     shiftOut(SER, SRCLK, LSBFIRST, keydata >> 16);
     shiftOut(SER, SRCLK, LSBFIRST, keydata >> 24);
-    Serial.println(keydata, BIN);
+    //   Serial.println(keydata, BIN);
     digitalWrite(RCLK, HIGH);
-    delay(300);
+    //   delay(300);
   }
 }
 
-void keysRead()
+unsigned int keysRead()
 {
+  unsigned int result = 0;
   for (int i = 0; i < 4; i++)
   {
-    mcp.digitalWrite(scan_line[i], LOW);
+    mcp.digitalWrite(scan_line[3 - i], LOW);
     /*
       for (int j = 0; j < 8; j++)
       {
       Serial.print(mcp.digitalRead(data_line[j]), BIN);
       }
     */
-    Serial.print(mcp.readGPIOAB() >> 8, BIN);
-    mcp.digitalWrite(scan_line[i], HIGH);
-    Serial.print(" ");
+    result += (mcp.readGPIOAB() >> 8) << (3 - i) * 8;
+    //    Serial.print(mcp.readGPIOAB() >> 8, BIN);
+    mcp.digitalWrite(scan_line[3 - i], HIGH);
+    //    Serial.print(" ");
   }
-  Serial.println();
+  //  Serial.println(result, BIN);
+  return result;
 }
