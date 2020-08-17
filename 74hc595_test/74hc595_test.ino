@@ -1,7 +1,5 @@
 #include <M5Atom.h>
 
-
-
 /*
    74HC595
    SER : 2
