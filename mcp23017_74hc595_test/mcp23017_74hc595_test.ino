@@ -55,13 +55,13 @@ uint32_t dif_keys;
 
 void loop()
 {
-  Serial.print(pedal);
-  Serial.println(mcp.digitalRead(pedal));
+  // Serial.print(pedal);
+  //  Serial.println(mcp.digitalRead(pedal));
 
   pre_keys = cur_keys;
   cur_keys = keysRead();
-  Serial.print(cur_keys, BIN);
-  Serial.print(" ");
+  //  Serial.print(cur_keys, BIN);
+  //  Serial.print(" ");
 
   // サステインペダル処理
   // ペダルONなら前回値、ペダルOFFなら更新
@@ -70,12 +70,15 @@ void loop()
   }
 
   // ペダルONの間は
-  // out_keys = cur_keys & sus_keys;
-  out_keys = pre_keys & ~cur_keys & ~sus_keys | cur_keys & sus_keys;
-
-  Serial.println(out_keys, BIN);
+  out_keys = cur_keys & sus_keys;
+  //out_keys = (pre_keys & ~cur_keys & ~sus_keys) | (cur_keys & sus_keys);
+  //  Serial.println(out_keys, BIN);
+  
   keysWrite(out_keys);
-//  delay(30);
+  if (cur_keys & sus_keys != out_keys) {
+    //    Serial.println("now!");
+    delay(25);
+  }
 }
 
 void keysWrite(int keydata)
