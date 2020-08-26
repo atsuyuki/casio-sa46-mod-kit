@@ -56,14 +56,10 @@ boolean pedal_state;
 
 void loop()
 {
-  // Serial.print(pedal);
-  //  Serial.println(mcp.digitalRead(pedal));
 
   pre_keys = cur_keys;
   cur_keys = keysRead();
   pedal_state = mcp.digitalRead(pedal);
-  //  Serial.print(cur_keys, BIN);
-  //  Serial.print(" ");
 
   // サステインペダル処理
   // ペダルONなら前回値、ペダルOFFなら更新
@@ -74,7 +70,12 @@ void loop()
   // ペダルONの間は
   out_keys = pre_keys & ~cur_keys & ~sus_keys | cur_keys & sus_keys;
   //out_keys = cur_keys & sus_keys;
-  //  Serial.println(out_keys, BIN);
+
+  // ここにアルペジエーターなど入れる
+  if (true)
+  {
+    arpeggiator();
+  }
 
   keysWrite(out_keys);
 
@@ -96,18 +97,12 @@ void loop()
 
 void keysWrite(int keydata)
 {
-
-  //  for (int j = 32; j > 0; j--)
-  //  {
   digitalWrite(RCLK, LOW);
   shiftOut(SER, SRCLK, LSBFIRST, keydata);
   shiftOut(SER, SRCLK, LSBFIRST, keydata >> 8);
   shiftOut(SER, SRCLK, LSBFIRST, keydata >> 16);
   shiftOut(SER, SRCLK, LSBFIRST, keydata >> 24);
-  //   Serial.println(keydata, BIN);
   digitalWrite(RCLK, HIGH);
-  //   delay(300);
-  //  }
 }
 
 unsigned int keysRead()
@@ -116,17 +111,59 @@ unsigned int keysRead()
   for (int i = 0; i < 4; i++)
   {
     mcp.digitalWrite(scan_line[3 - i], LOW);
-    /*
-      for (int j = 0; j < 8; j++)
-      {
-      Serial.print(mcp.digitalRead(data_line[j]), BIN);
-      }
-    */
     result += (mcp.readGPIOAB() >> 8) << (3 - i) * 8;
-    //    Serial.print(mcp.readGPIOAB() >> 8, BIN);
     mcp.digitalWrite(scan_line[3 - i], HIGH);
-    //    Serial.print(" ");
   }
-  //  Serial.println(result, BIN);
   return result;
+}
+
+// アルペジエーター用変数
+uint32_t arp_time;
+int arp_note_length = 100;
+int arp_count = 0;
+
+// アルペジエーター
+void arpeggiator()
+{
+  // out_keys[arp_count] == 1
+  Serial.print(~(out_keys >> arp_count), BIN);
+  Serial.print(" ");
+  if (~(out_keys >> arp_count) & 1) {
+
+    // タイマーが閾値を超えたら
+    if ((millis() - arp_time) > arp_note_length)
+    {
+      // アルペジエーターを進める
+      arpProc();
+      // タイマーをリセット
+      arp_time = millis();
+    } else {
+      // out_keys[arp_count]以外を0にする
+      out_keys = 0xffffffff ^ 1 << arp_count;
+      Serial.println(out_keys, BIN);
+
+    }
+    // out_keys[arp_count] == 0
+  } else {
+    out_keys = 0xffffffff;
+    // アルペジエーターを進める
+    arpProc();
+  }
+}
+
+boolean arp_step = true;
+// アルペジエーター進める
+void arpProc()
+{
+  // 鍵盤の端まで来たら
+  if (arp_count == 0 || arp_count == 31)
+    //  if (arp_count == 32)
+  {
+    // 符号を反転
+    arp_step = !arp_step;
+    //    arp_count = 0;
+  }
+  // カウントを進める（arp_stepをtrue/falseから1/-1に変換）
+  arp_count = arp_count + (arp_step * 2 - 1);
+
 }
