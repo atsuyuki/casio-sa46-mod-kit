@@ -17,21 +17,21 @@ $EndDescr
 $Comp
 L dk_Logic-Shift-Registers:74HC595D_118 U9
 U 1 1 5F52D3C2
-P 8400 6650
-F 0 "U9" H 8450 6953 60  0000 C CNN
-F 1 "74HC595D_118" H 8450 6847 60  0000 C CNN
-F 2 "digikey-footprints:SOIC-16_W3.90mm" H 8600 6850 60  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 8600 6950 60  0001 L CNN
-F 4 "1727-2821-1-ND" H 8600 7050 60  0001 L CNN "Digi-Key_PN"
-F 5 "74HC595D,118" H 8600 7150 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 8600 7250 60  0001 L CNN "Category"
-F 7 "Logic - Shift Registers" H 8600 7350 60  0001 L CNN "Family"
-F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 8600 7450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 8600 7550 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 8600 7650 60  0001 L CNN "Description"
-F 11 "Nexperia USA Inc." H 8600 7750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8600 7850 60  0001 L CNN "Status"
-	1    8400 6650
+P 8400 6300
+F 0 "U9" H 8450 6603 60  0000 C CNN
+F 1 "74HC595D_118" H 8450 6497 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 8600 6500 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 8600 6600 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 8600 6700 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 8600 6800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 8600 6900 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 8600 7000 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 8600 7100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 8600 7200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 8600 7300 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 8600 7400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8600 7500 60  0001 L CNN "Status"
+	1    8400 6300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -271,49 +271,49 @@ Wire Wire Line
 Wire Wire Line
 	8950 7200 8300 7200
 Wire Wire Line
-	8300 7200 8300 7150
+	8300 7200 8300 6800
 Wire Wire Line
 	8750 7800 8750 7300
 Wire Wire Line
 	8750 7300 8200 7300
 Wire Wire Line
-	8200 7300 8200 7150
+	8200 7300 8200 6800
 Wire Wire Line
 	8550 7800 8550 7400
 Wire Wire Line
 	8550 7400 8100 7400
 Wire Wire Line
-	8100 7400 8100 7150
+	8100 7400 8100 6800
 Wire Wire Line
 	8350 7800 8350 7500
 Wire Wire Line
 	8350 7500 8000 7500
 Wire Wire Line
-	8000 7500 8000 7150
+	8000 7500 8000 6800
 Wire Wire Line
 	7650 7800 7650 7550
 Wire Wire Line
 	7650 7550 7900 7550
 Wire Wire Line
-	7900 7550 7900 7150
+	7900 7550 7900 6800
 Wire Wire Line
 	7450 7800 7450 7450
 Wire Wire Line
 	7450 7450 7800 7450
 Wire Wire Line
-	7800 7450 7800 7150
+	7800 7450 7800 6800
 Wire Wire Line
 	7250 7800 7250 7350
 Wire Wire Line
 	7250 7350 7700 7350
 Wire Wire Line
-	7700 7350 7700 7150
+	7700 7350 7700 6800
 Wire Wire Line
 	7050 7800 7050 7250
 Wire Wire Line
 	7050 7250 7600 7250
 Wire Wire Line
-	7600 7250 7600 7150
+	7600 7250 7600 6800
 Wire Wire Line
 	8850 8300 8850 8500
 Wire Wire Line
@@ -331,12 +331,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 8300 6950 8500
 Wire Wire Line
-	8050 8000 8050 8350
-Wire Wire Line
-	8050 8350 6750 8350
-Wire Wire Line
-	6750 8350 6750 8000
-Wire Wire Line
 	7850 8100 7850 8450
 Wire Wire Line
 	7850 8450 9150 8450
@@ -345,21 +339,21 @@ Wire Wire Line
 $Comp
 L dk_Logic-Shift-Registers:74HC595D_118 U5
 U 1 1 5F55CBD6
-P 5800 6650
-F 0 "U5" H 5850 6953 60  0000 C CNN
-F 1 "74HC595D_118" H 5850 6847 60  0000 C CNN
-F 2 "digikey-footprints:SOIC-16_W3.90mm" H 6000 6850 60  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 6000 6950 60  0001 L CNN
-F 4 "1727-2821-1-ND" H 6000 7050 60  0001 L CNN "Digi-Key_PN"
-F 5 "74HC595D,118" H 6000 7150 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 6000 7250 60  0001 L CNN "Category"
-F 7 "Logic - Shift Registers" H 6000 7350 60  0001 L CNN "Family"
-F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 6000 7450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 6000 7550 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 6000 7650 60  0001 L CNN "Description"
-F 11 "Nexperia USA Inc." H 6000 7750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6000 7850 60  0001 L CNN "Status"
-	1    5800 6650
+P 5800 6300
+F 0 "U5" H 5850 6603 60  0000 C CNN
+F 1 "74HC595D_118" H 5850 6497 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 6000 6500 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 6000 6600 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 6000 6700 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 6000 6800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6000 6900 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 6000 7000 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 6000 7100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 6000 7200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 6000 7300 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 6000 7400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 7500 60  0001 L CNN "Status"
+	1    5800 6300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -599,49 +593,47 @@ Wire Wire Line
 Wire Wire Line
 	6350 7200 5700 7200
 Wire Wire Line
-	5700 7200 5700 7150
+	5700 7200 5700 6800
 Wire Wire Line
 	6150 7800 6150 7300
 Wire Wire Line
 	6150 7300 5600 7300
 Wire Wire Line
-	5600 7300 5600 7150
+	5600 7300 5600 6800
 Wire Wire Line
 	5950 7800 5950 7400
 Wire Wire Line
 	5950 7400 5500 7400
 Wire Wire Line
-	5500 7400 5500 7150
+	5500 7400 5500 6800
 Wire Wire Line
 	5750 7800 5750 7500
 Wire Wire Line
 	5750 7500 5400 7500
 Wire Wire Line
-	5400 7500 5400 7150
-Wire Wire Line
 	5050 7800 5050 7550
 Wire Wire Line
 	5050 7550 5300 7550
 Wire Wire Line
-	5300 7550 5300 7150
+	5300 7550 5300 6800
 Wire Wire Line
 	4850 7800 4850 7450
 Wire Wire Line
 	4850 7450 5200 7450
 Wire Wire Line
-	5200 7450 5200 7150
+	5200 7450 5200 6800
 Wire Wire Line
 	4650 7800 4650 7350
 Wire Wire Line
 	4650 7350 5100 7350
 Wire Wire Line
-	5100 7350 5100 7150
+	5100 7350 5100 6800
 Wire Wire Line
 	4450 7800 4450 7250
 Wire Wire Line
 	4450 7250 5000 7250
 Wire Wire Line
-	5000 7250 5000 7150
+	5000 7250 5000 6800
 Wire Wire Line
 	6250 8300 6250 8500
 Wire Wire Line
@@ -664,26 +656,6 @@ Wire Wire Line
 	5250 8450 6550 8450
 Wire Wire Line
 	6550 8450 6550 8100
-$Comp
-L dk_Logic-Shift-Registers:74HC595D_118 U2
-U 1 1 5F57329D
-P 3200 6650
-F 0 "U2" H 3250 6953 60  0000 C CNN
-F 1 "74HC595D_118" H 3250 6847 60  0000 C CNN
-F 2 "digikey-footprints:SOIC-16_W3.90mm" H 3400 6850 60  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 3400 6950 60  0001 L CNN
-F 4 "1727-2821-1-ND" H 3400 7050 60  0001 L CNN "Digi-Key_PN"
-F 5 "74HC595D,118" H 3400 7150 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 3400 7250 60  0001 L CNN "Category"
-F 7 "Logic - Shift Registers" H 3400 7350 60  0001 L CNN "Family"
-F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 3400 7450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 3400 7550 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 3400 7650 60  0001 L CNN "Description"
-F 11 "Nexperia USA Inc." H 3400 7750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3400 7850 60  0001 L CNN "Status"
-	1    3200 6650
-	0    1    1    0   
-$EndComp
 $Comp
 L dk_Diodes-Rectifiers-Single:1N4148WS D8
 U 1 1 5F5732B0
@@ -921,49 +893,49 @@ Wire Wire Line
 Wire Wire Line
 	3750 7200 3100 7200
 Wire Wire Line
-	3100 7200 3100 7150
+	3100 7200 3100 6800
 Wire Wire Line
 	3550 7800 3550 7300
 Wire Wire Line
 	3550 7300 3000 7300
 Wire Wire Line
-	3000 7300 3000 7150
+	3000 7300 3000 6800
 Wire Wire Line
 	3350 7800 3350 7400
 Wire Wire Line
 	3350 7400 2900 7400
 Wire Wire Line
-	2900 7400 2900 7150
+	2900 7400 2900 6800
 Wire Wire Line
 	3150 7800 3150 7500
 Wire Wire Line
 	3150 7500 2800 7500
 Wire Wire Line
-	2800 7500 2800 7150
+	2800 7500 2800 6800
 Wire Wire Line
 	2450 7800 2450 7550
 Wire Wire Line
 	2450 7550 2700 7550
 Wire Wire Line
-	2700 7550 2700 7150
+	2700 7550 2700 6800
 Wire Wire Line
 	2250 7800 2250 7450
 Wire Wire Line
 	2250 7450 2600 7450
 Wire Wire Line
-	2600 7450 2600 7150
+	2600 7450 2600 6800
 Wire Wire Line
 	2050 7800 2050 7350
 Wire Wire Line
 	2050 7350 2500 7350
 Wire Wire Line
-	2500 7350 2500 7150
+	2500 7350 2500 6800
 Wire Wire Line
 	1850 7800 1850 7250
 Wire Wire Line
 	1850 7250 2400 7250
 Wire Wire Line
-	2400 7250 2400 7150
+	2400 7250 2400 6800
 Wire Wire Line
 	3650 8300 3650 8500
 Wire Wire Line
@@ -981,8 +953,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 8300 1750 8500
 Wire Wire Line
-	1550 8350 1550 8000
-Wire Wire Line
 	2650 8100 2650 8450
 Wire Wire Line
 	2650 8450 3950 8450
@@ -991,21 +961,21 @@ Wire Wire Line
 $Comp
 L dk_Logic-Shift-Registers:74HC595D_118 U12
 U 1 1 5F586233
-P 10950 6650
-F 0 "U12" H 11000 6953 60  0000 C CNN
-F 1 "74HC595D_118" H 11000 6847 60  0000 C CNN
-F 2 "digikey-footprints:SOIC-16_W3.90mm" H 11150 6850 60  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 11150 6950 60  0001 L CNN
-F 4 "1727-2821-1-ND" H 11150 7050 60  0001 L CNN "Digi-Key_PN"
-F 5 "74HC595D,118" H 11150 7150 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 11150 7250 60  0001 L CNN "Category"
-F 7 "Logic - Shift Registers" H 11150 7350 60  0001 L CNN "Family"
-F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 11150 7450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 11150 7550 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 11150 7650 60  0001 L CNN "Description"
-F 11 "Nexperia USA Inc." H 11150 7750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 11150 7850 60  0001 L CNN "Status"
-	1    10950 6650
+P 10950 6300
+F 0 "U12" H 11000 6603 60  0000 C CNN
+F 1 "74HC595D_118" H 11000 6497 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 11150 6500 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 11150 6600 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 11150 6700 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 11150 6800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 11150 6900 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 11150 7000 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 11150 7100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 11150 7200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 11150 7300 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 11150 7400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11150 7500 60  0001 L CNN "Status"
+	1    10950 6300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1245,47 +1215,47 @@ Wire Wire Line
 Wire Wire Line
 	11500 7200 10850 7200
 Wire Wire Line
-	10850 7200 10850 7150
+	10850 7200 10850 6800
 Wire Wire Line
 	11300 7800 11300 7300
 Wire Wire Line
 	11300 7300 10750 7300
 Wire Wire Line
-	10750 7300 10750 7150
+	10750 7300 10750 6800
 Wire Wire Line
 	11100 7800 11100 7400
 Wire Wire Line
 	11100 7400 10650 7400
 Wire Wire Line
-	10650 7400 10650 7150
+	10650 7400 10650 6800
 Wire Wire Line
 	10900 7800 10900 7500
 Wire Wire Line
 	10900 7500 10550 7500
 Wire Wire Line
-	10550 7500 10550 7150
+	10550 7500 10550 6800
 Wire Wire Line
 	10200 7800 10200 7550
 Wire Wire Line
-	10450 7550 10450 7150
+	10450 7550 10450 6800
 Wire Wire Line
 	10000 7800 10000 7450
 Wire Wire Line
 	10000 7450 10350 7450
 Wire Wire Line
-	10350 7450 10350 7150
+	10350 7450 10350 6800
 Wire Wire Line
 	9800 7800 9800 7350
 Wire Wire Line
 	9800 7350 10250 7350
 Wire Wire Line
-	10250 7350 10250 7150
+	10250 7350 10250 6800
 Wire Wire Line
 	9600 7800 9600 7250
 Wire Wire Line
 	9600 7250 10150 7250
 Wire Wire Line
-	10150 7250 10150 7150
+	10150 7250 10150 6800
 Wire Wire Line
 	11400 8300 11400 8500
 Wire Wire Line
@@ -1302,10 +1272,6 @@ Wire Wire Line
 	9700 8300 9700 8500
 Wire Wire Line
 	9500 8300 9500 8500
-Wire Wire Line
-	10600 8350 9300 8350
-Wire Wire Line
-	9300 8350 9300 8000
 Wire Wire Line
 	10400 8100 10400 8450
 Wire Wire Line
@@ -1440,7 +1406,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 9700 1750 8900
 Connection ~ 4350 9700
-Connection ~ 6750 8350
 Wire Wire Line
 	3950 8450 5250 8450
 Connection ~ 3950 8450
@@ -1454,325 +1419,248 @@ Wire Wire Line
 Connection ~ 9150 8450
 Connection ~ 10400 8450
 Wire Wire Line
-	7700 6250 7700 6150
+	7700 5900 7700 5800
 Wire Wire Line
-	7700 6150 9250 6150
+	7700 5800 9250 5800
 Wire Wire Line
-	9250 6150 9250 7150
+	9250 5800 9250 6800
 Wire Wire Line
-	9250 7150 10050 7150
+	9250 6800 10050 6800
 Wire Wire Line
-	5100 6250 5100 6150
+	5100 5900 5100 5800
 Wire Wire Line
-	5100 6150 6750 6150
+	5100 5800 6750 5800
 Wire Wire Line
-	6750 6150 6750 7150
+	6750 5800 6750 6800
 Wire Wire Line
-	6750 7150 7500 7150
+	6750 6800 7500 6800
 Wire Wire Line
-	2500 6250 2500 6150
+	2500 5800 2500 5900
 Wire Wire Line
-	2500 6150 4100 6150
+	2500 5800 4100 5800
 Wire Wire Line
-	4100 6150 4100 7150
+	4100 5800 4100 6800
 Wire Wire Line
-	4100 7150 4900 7150
+	4100 6800 4900 6800
 Wire Wire Line
-	7800 6250 7800 6050
+	7800 5900 7800 5700
 Wire Wire Line
-	7800 6050 10350 6050
+	7800 5700 10350 5700
 Wire Wire Line
-	10350 6050 10350 6250
+	10350 5700 10350 5900
 Wire Wire Line
-	7900 6250 7900 5950
+	7900 5900 7900 5600
 Wire Wire Line
-	7900 5950 10450 5950
+	7900 5600 10450 5600
 Wire Wire Line
-	10450 5950 10450 6250
+	10450 5600 10450 5900
 Wire Wire Line
-	8000 6250 8000 5850
+	8000 5900 8000 5500
 Wire Wire Line
-	8000 5850 10550 5850
+	8000 5500 10550 5500
 Wire Wire Line
-	8100 6250 8100 5750
+	8100 5900 8100 5400
 Wire Wire Line
-	8100 5750 10650 5750
+	8100 5400 10650 5400
 Wire Wire Line
-	10650 5750 10650 6250
+	10650 5400 10650 5900
 Wire Wire Line
-	7800 6050 5200 6050
+	7800 5700 5200 5700
 Wire Wire Line
-	5200 6050 5200 6250
-Connection ~ 7800 6050
+	5200 5700 5200 5900
+Connection ~ 7800 5700
 Wire Wire Line
-	7900 5950 5300 5950
+	7900 5600 5300 5600
 Wire Wire Line
-	5300 5950 5300 6250
-Connection ~ 7900 5950
+	5300 5600 5300 5900
+Connection ~ 7900 5600
 Wire Wire Line
-	8000 5850 5400 5850
+	8000 5500 5400 5500
 Wire Wire Line
-	5400 5850 5400 6250
-Connection ~ 8000 5850
+	5400 5500 5400 5900
+Connection ~ 8000 5500
 Wire Wire Line
-	8100 5750 5500 5750
+	8100 5400 5500 5400
 Wire Wire Line
-	5500 5750 5500 6250
-Connection ~ 8100 5750
+	5500 5400 5500 5900
+Connection ~ 8100 5400
 Wire Wire Line
-	5200 6050 2600 6050
+	5200 5700 2600 5700
 Wire Wire Line
-	2600 6050 2600 6250
-Connection ~ 5200 6050
+	2600 5700 2600 5900
+Connection ~ 5200 5700
 Wire Wire Line
-	5300 5950 2700 5950
+	5300 5600 2700 5600
 Wire Wire Line
-	2700 5950 2700 6250
-Connection ~ 5300 5950
+	2700 5600 2700 5900
+Connection ~ 5300 5600
 Wire Wire Line
-	5400 5850 2800 5850
+	5400 5500 2800 5500
 Wire Wire Line
-	2800 5850 2800 6250
-Connection ~ 5400 5850
+	2800 5500 2800 5900
+Connection ~ 5400 5500
 Wire Wire Line
-	5500 5750 2900 5750
+	5500 5400 2900 5400
 Wire Wire Line
-	2900 5750 2900 6250
-Connection ~ 5500 5750
-Wire Wire Line
-	8050 8350 9300 8350
-Connection ~ 8050 8350
-Connection ~ 9300 8350
+	2900 5400 2900 5900
+Connection ~ 5500 5400
 $Comp
 L Connector:Conn_01x05_Male J2
 U 1 1 5FA87EF8
-P 12900 6700
-F 0 "J2" H 13008 7081 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 13008 6990 50  0000 C CNN
-F 2 "" H 12900 6700 50  0001 C CNN
-F 3 "~" H 12900 6700 50  0001 C CNN
-	1    12900 6700
+P 12700 5600
+F 0 "J2" H 12808 5981 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 12808 5890 50  0000 C CNN
+F 2 "" H 12700 5600 50  0001 C CNN
+F 3 "~" H 12700 5600 50  0001 C CNN
+	1    12700 5600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5FA8967A
-P 13300 6800
-F 0 "J1" H 13272 6682 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 13850 6450 50  0000 R CNN
-F 2 "" H 13300 6800 50  0001 C CNN
-F 3 "~" H 13300 6800 50  0001 C CNN
-	1    13300 6800
+P 13100 5700
+F 0 "J1" H 13072 5582 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 13650 5350 50  0000 R CNN
+F 2 "" H 13100 5700 50  0001 C CNN
+F 3 "~" H 13100 5700 50  0001 C CNN
+	1    13100 5700
 	1    0    0    1   
 $EndComp
-Text GLabel 13600 6600 2    50   Input ~ 0
+Text GLabel 13400 5500 2    50   Input ~ 0
 G21
-Text GLabel 13600 6700 2    50   Input ~ 0
+Text GLabel 13400 5600 2    50   Input ~ 0
 G25
-Text GLabel 13600 6800 2    50   Input ~ 0
+Text GLabel 13400 5700 2    50   Input ~ 0
 5V
-Text GLabel 13600 6900 2    50   Input ~ 0
+Text GLabel 13400 5800 2    50   Input ~ 0
 GND
-Text GLabel 12600 6500 0    50   Input ~ 0
+Text GLabel 12400 5400 0    50   Input ~ 0
 3V3
-Text GLabel 12600 6600 0    50   Input ~ 0
+Text GLabel 12400 5500 0    50   Input ~ 0
 G22
-Text GLabel 12600 6700 0    50   Input ~ 0
+Text GLabel 12400 5600 0    50   Input ~ 0
 G19
-Text GLabel 12600 6800 0    50   Input ~ 0
+Text GLabel 12400 5700 0    50   Input ~ 0
 G23
-Text GLabel 12600 6900 0    50   Input ~ 0
+Text GLabel 12400 5800 0    50   Input ~ 0
 G33
 Wire Wire Line
-	12700 6500 12600 6500
+	12500 5400 12400 5400
 Wire Wire Line
-	12700 6600 12600 6600
+	12500 5500 12400 5500
 Wire Wire Line
-	12700 6700 12600 6700
+	12500 5600 12400 5600
 Wire Wire Line
-	12700 6800 12600 6800
+	12500 5700 12400 5700
 Wire Wire Line
-	12700 6900 12600 6900
+	12500 5800 12400 5800
 Wire Wire Line
-	13600 6600 13500 6600
+	13400 5500 13300 5500
 Wire Wire Line
-	13600 6700 13500 6700
+	13400 5600 13300 5600
 Wire Wire Line
-	13600 6800 13500 6800
+	13400 5700 13300 5700
 Wire Wire Line
-	13600 6900 13500 6900
+	13400 5800 13300 5800
 $Comp
 L power:+5V #PWR01
 U 1 1 5FBD87B9
-P 12900 5650
-F 0 "#PWR01" H 12900 5500 50  0001 C CNN
-F 1 "+5V" H 12915 5823 50  0000 C CNN
-F 2 "" H 12900 5650 50  0001 C CNN
-F 3 "" H 12900 5650 50  0001 C CNN
-	1    12900 5650
+P 7450 2500
+F 0 "#PWR01" H 7450 2350 50  0001 C CNN
+F 1 "+5V" H 7465 2673 50  0000 C CNN
+F 2 "" H 7450 2500 50  0001 C CNN
+F 3 "" H 7450 2500 50  0001 C CNN
+	1    7450 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5FBDA59B
-P 12900 6050
-F 0 "#PWR02" H 12900 5800 50  0001 C CNN
-F 1 "GND" H 12905 5877 50  0000 C CNN
-F 2 "" H 12900 6050 50  0001 C CNN
-F 3 "" H 12900 6050 50  0001 C CNN
-	1    12900 6050
+P 7450 2900
+F 0 "#PWR02" H 7450 2650 50  0001 C CNN
+F 1 "GND" H 7455 2727 50  0000 C CNN
+F 2 "" H 7450 2900 50  0001 C CNN
+F 3 "" H 7450 2900 50  0001 C CNN
+	1    7450 2900
 	1    0    0    -1  
 $EndComp
-Text GLabel 12800 5750 0    50   Input ~ 0
+Text GLabel 7350 2600 0    50   Input ~ 0
 5V
-Text GLabel 12800 5850 0    50   Input ~ 0
+Text GLabel 7350 2700 0    50   Input ~ 0
 3V3
-Text GLabel 12800 5950 0    50   Input ~ 0
+Text GLabel 7350 2800 0    50   Input ~ 0
 GND
 Wire Wire Line
-	12800 5750 12900 5750
+	7350 2600 7450 2600
 Wire Wire Line
-	12900 5750 12900 5650
+	7450 2600 7450 2500
 Wire Wire Line
-	12800 5950 12900 5950
+	7350 2800 7450 2800
 Wire Wire Line
-	12900 5950 12900 6050
-Text GLabel 7200 6650 0    50   Input ~ 0
-GND
-Text GLabel 9700 6650 0    50   Input ~ 0
-GND
-Text GLabel 4550 6650 0    50   Input ~ 0
-GND
-Text GLabel 2100 6650 0    50   Input ~ 0
-GND
-Text GLabel 3300 6650 2    50   Input ~ 0
-5V
-Text GLabel 8750 6650 2    50   Input ~ 0
-5V
-Text GLabel 11300 6650 2    50   Input ~ 0
-5V
-Text GLabel 1350 8000 0    50   Input ~ 0
-GND
+	7450 2800 7450 2900
 Text GLabel 1350 8450 0    50   Input ~ 0
 5V
 Wire Wire Line
-	1350 8000 1550 8000
-Connection ~ 1550 8000
-Wire Wire Line
 	1350 8450 2650 8450
 Connection ~ 2650 8450
-Text GLabel 11800 6900 0    50   Input ~ 0
+Text GLabel 11600 5800 0    50   Input ~ 0
 SER
-Text GLabel 11800 6700 0    50   Input ~ 0
+Text GLabel 11600 5600 0    50   Input ~ 0
 RCLK
-Text GLabel 11800 6600 0    50   Input ~ 0
+Text GLabel 11600 5500 0    50   Input ~ 0
 SRCLK
-Text GLabel 11950 6900 2    50   Input ~ 0
+Text GLabel 11750 5800 2    50   Input ~ 0
 G33
-Text GLabel 11950 6600 2    50   Input ~ 0
+Text GLabel 11750 5500 2    50   Input ~ 0
 G22
-Text GLabel 11950 6700 2    50   Input ~ 0
+Text GLabel 11750 5600 2    50   Input ~ 0
 G19
 Wire Wire Line
-	11800 6900 11950 6900
+	11600 5800 11750 5800
 Wire Wire Line
-	11800 6700 11950 6700
+	11600 5600 11750 5600
 Wire Wire Line
-	11800 6600 11950 6600
-Text GLabel 10850 6150 2    50   Input ~ 0
+	11600 5500 11750 5500
+Text GLabel 10850 5800 2    50   Input ~ 0
 SER
-Text GLabel 10850 5950 2    50   Input ~ 0
+Text GLabel 10850 5600 2    50   Input ~ 0
 RCLK
-Text GLabel 10850 5850 2    50   Input ~ 0
+Text GLabel 10850 5500 2    50   Input ~ 0
 SRCLK
-Text GLabel 10850 5750 2    50   Input ~ 0
+Text GLabel 10850 5400 2    50   Input ~ 0
 5V
-Text GLabel 10850 6050 2    50   Input ~ 0
+Text GLabel 10850 5700 2    50   Input ~ 0
 GND
 Wire Wire Line
-	10850 6050 10350 6050
-Connection ~ 10350 6050
+	10850 5700 10350 5700
+Connection ~ 10350 5700
 Wire Wire Line
-	10550 5850 10550 6250
+	10550 5500 10550 5900
 Wire Wire Line
-	10450 5950 10850 5950
-Connection ~ 10450 5950
+	10450 5600 10850 5600
+Connection ~ 10450 5600
 Wire Wire Line
-	10550 5850 10850 5850
-Connection ~ 10550 5850
+	10550 5500 10850 5500
+Connection ~ 10550 5500
 Wire Wire Line
-	10650 5750 10850 5750
-Connection ~ 10650 5750
+	10650 5400 10850 5400
+Connection ~ 10650 5400
 Wire Wire Line
-	10850 6150 10250 6150
+	10850 5800 10250 5800
 Wire Wire Line
-	10250 6150 10250 6250
-Wire Wire Line
-	9700 3800 9700 3700
-Wire Wire Line
-	9700 3700 9800 3700
-Wire Wire Line
-	9900 3700 9900 3800
-Wire Wire Line
-	9800 3800 9800 3700
-Connection ~ 9800 3700
-Wire Wire Line
-	9800 3700 9900 3700
-Wire Wire Line
-	11900 4200 12000 4200
-Wire Wire Line
-	12000 4200 12000 4700
-Wire Wire Line
-	12000 4700 11500 4700
-Wire Wire Line
-	11500 4700 11500 4600
-Connection ~ 9700 3700
-$Comp
-L dk_Interface-I-O-Expanders:MCP23017-E_SO U7
-U 1 1 5F52FA87
-P 11100 4100
-F 0 "U7" H 11200 2297 60  0000 C CNN
-F 1 "MCP23017-E_SO" H 11200 2403 60  0000 C CNN
-F 2 "digikey-footprints:SOIC-28_W7.5mm" H 11300 4300 60  0001 L CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023709" H 11300 4400 60  0001 L CNN
-F 4 "MCP23017-E/SO-ND" H 11300 4500 60  0001 L CNN "Digi-Key_PN"
-F 5 "MCP23017-E/SO" H 11300 4600 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 11300 4700 60  0001 L CNN "Category"
-F 7 "Interface - I/O Expanders" H 11300 4800 60  0001 L CNN "Family"
-F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023709" H 11300 4900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/microchip-technology/MCP23017-E-SO/MCP23017-E-SO-ND/894271" H 11300 5000 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC I/O EXPANDER I2C 16B 28SOIC" H 11300 5100 60  0001 L CNN "Description"
-F 11 "Microchip Technology" H 11300 5200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 11300 5300 60  0001 L CNN "Status"
-	1    11100 4100
-	0    1    1    0   
-$EndComp
-Text GLabel 10000 3650 1    50   Input ~ 0
-SCK
-Text GLabel 10100 3650 1    50   Input ~ 0
-SDA
-Wire Wire Line
-	10000 3800 10000 3650
-Wire Wire Line
-	10100 3800 10100 3650
-Text GLabel 14100 6600 0    50   Input ~ 0
+	10250 5800 10250 5900
+Text GLabel 13900 5500 0    50   Input ~ 0
 G21
-Text GLabel 14100 6700 0    50   Input ~ 0
+Text GLabel 13900 5600 0    50   Input ~ 0
 G25
-Text GLabel 14300 6700 2    50   Input ~ 0
+Text GLabel 14100 5600 2    50   Input ~ 0
 SCK
-Text GLabel 14300 6600 2    50   Input ~ 0
+Text GLabel 14100 5500 2    50   Input ~ 0
 SDA
 Wire Wire Line
-	14100 6600 14300 6600
+	13900 5500 14100 5500
 Wire Wire Line
-	14100 6700 14300 6700
-Text GLabel 12150 4200 2    50   Input ~ 0
-5V
-Text GLabel 9200 3700 0    50   Input ~ 0
-GND
-Wire Wire Line
-	12150 4200 12000 4200
+	13900 5600 14100 5600
 Wire Wire Line
 	10200 7550 10450 7550
 Wire Wire Line
@@ -1791,31 +1679,31 @@ Wire Wire Line
 	7550 7700 8250 7700
 Connection ~ 7550 7700
 Connection ~ 8250 7700
-Text GLabel 9400 7550 0    50   Input ~ 0
+Text GLabel 9450 7550 0    50   Input ~ 0
 KEY_SCAN_1
 Wire Wire Line
-	9400 7550 9500 7550
+	9450 7550 9500 7550
 Wire Wire Line
 	9500 7550 9500 7700
 Connection ~ 9500 7700
-Text GLabel 6850 7550 0    50   Input ~ 0
+Text GLabel 6900 7550 0    50   Input ~ 0
 KEY_SCAN_2
 Wire Wire Line
-	6850 7550 6950 7550
+	6900 7550 6950 7550
 Wire Wire Line
 	6950 7550 6950 7700
 Connection ~ 6950 7700
-Text GLabel 4250 7550 0    50   Input ~ 0
+Text GLabel 4300 7550 0    50   Input ~ 0
 KEY_SCAN_3
 Wire Wire Line
-	4250 7550 4350 7550
+	4300 7550 4350 7550
 Wire Wire Line
 	4350 7550 4350 7700
 Connection ~ 4350 7700
-Text GLabel 1650 7550 0    50   Input ~ 0
+Text GLabel 1700 7550 0    50   Input ~ 0
 KEY_SCAN_4
 Wire Wire Line
-	1650 7550 1750 7550
+	1700 7550 1750 7550
 Wire Wire Line
 	1750 7550 1750 7700
 Connection ~ 1750 7700
@@ -1859,203 +1747,386 @@ Connection ~ 9700 9600
 Wire Wire Line
 	9500 9700 11700 9700
 Connection ~ 9500 9700
-Connection ~ 12000 4200
 $Comp
 L Connector_Generic:Conn_02x12_Counter_Clockwise J3
 U 1 1 60A0C3DE
-P 13600 8150
-F 0 "J3" H 13650 8867 50  0000 C CNN
-F 1 "Conn_02x12_Counter_Clockwise" H 13650 8776 50  0000 C CNN
-F 2 "" H 13600 8150 50  0001 C CNN
-F 3 "~" H 13600 8150 50  0001 C CNN
-	1    13600 8150
-	1    0    0    -1  
+P 9100 3700
+F 0 "J3" H 9150 4417 50  0000 C CNN
+F 1 "Conn_02x12_Counter_Clockwise" H 9150 4326 50  0000 C CNN
+F 2 "" H 9100 3700 50  0001 C CNN
+F 3 "~" H 9100 3700 50  0001 C CNN
+	1    9100 3700
+	0    -1   -1   0   
 $EndComp
-Text GLabel 13150 7650 0    50   Input ~ 0
+Text GLabel 8600 4150 3    50   Input ~ 0
 KEY_DATA_1
-Text GLabel 13150 7750 0    50   Input ~ 0
+Text GLabel 8700 4150 3    50   Input ~ 0
 KEY_DATA_2
-Text GLabel 13150 7850 0    50   Input ~ 0
+Text GLabel 8800 4150 3    50   Input ~ 0
 KEY_DATA_3
-Text GLabel 13150 7950 0    50   Input ~ 0
+Text GLabel 8900 4150 3    50   Input ~ 0
 KEY_DATA_4
-Text GLabel 13150 8050 0    50   Input ~ 0
+Text GLabel 9000 4150 3    50   Input ~ 0
 KEY_DATA_5
-Text GLabel 13150 8150 0    50   Input ~ 0
+Text GLabel 9100 4150 3    50   Input ~ 0
 KEY_DATA_6
-Text GLabel 13150 8250 0    50   Input ~ 0
+Text GLabel 9200 4150 3    50   Input ~ 0
 KEY_DATA_7
-Text GLabel 13150 8350 0    50   Input ~ 0
+Text GLabel 9300 4150 3    50   Input ~ 0
 KEY_DATA_8
-Text GLabel 13150 8450 0    50   Input ~ 0
+Text GLabel 9400 4150 3    50   Input ~ 0
 KEY_SCAN_1
-Text GLabel 13150 8550 0    50   Input ~ 0
+Text GLabel 9500 4150 3    50   Input ~ 0
 KEY_SCAN_2
-Text GLabel 13150 8650 0    50   Input ~ 0
+Text GLabel 9600 4150 3    50   Input ~ 0
 KEY_SCAN_3
-Text GLabel 13150 8750 0    50   Input ~ 0
+Text GLabel 9700 4150 3    50   Input ~ 0
 KEY_SCAN_4
 Wire Wire Line
-	13150 8750 13400 8750
+	9700 4150 9700 3900
 Wire Wire Line
-	13400 8650 13150 8650
+	9600 3900 9600 4150
 Wire Wire Line
-	13150 8550 13400 8550
+	9500 4150 9500 3900
 Wire Wire Line
-	13400 8450 13150 8450
+	9400 3900 9400 4150
 Wire Wire Line
-	13150 8350 13400 8350
+	9300 4150 9300 3900
 Wire Wire Line
-	13400 8250 13150 8250
+	9200 3900 9200 4150
 Wire Wire Line
-	13150 8150 13400 8150
+	9100 4150 9100 3900
 Wire Wire Line
-	13400 8050 13150 8050
+	9000 3900 9000 4150
 Wire Wire Line
-	13150 7950 13400 7950
+	8900 4150 8900 3900
 Wire Wire Line
-	13400 7850 13150 7850
+	8800 3900 8800 4150
 Wire Wire Line
-	13150 7750 13400 7750
+	8700 4150 8700 3900
 Wire Wire Line
-	13400 7650 13150 7650
+	8600 3900 8600 4150
 Wire Wire Line
-	4550 6650 4700 6650
-Text GLabel 6100 6650 2    50   Input ~ 0
-5V
+	8600 3400 8600 3100
 Wire Wire Line
-	5900 6650 6100 6650
+	8700 3100 8700 3400
 Wire Wire Line
-	7200 6650 7300 6650
+	8800 3400 8800 3100
 Wire Wire Line
-	8750 6650 8500 6650
+	8900 3100 8900 3400
 Wire Wire Line
-	11300 6650 11050 6650
+	9000 3400 9000 3100
 Wire Wire Line
-	1550 8350 2850 8350
+	9100 3100 9100 3400
 Wire Wire Line
-	2850 8000 2850 8350
-Connection ~ 2850 8350
+	9200 3400 9200 3100
+Wire Wire Line
+	9300 3100 9300 3400
+Wire Wire Line
+	9400 3400 9400 3100
+Wire Wire Line
+	9500 3100 9500 3400
+Wire Wire Line
+	9600 3400 9600 3100
+Wire Wire Line
+	9700 3400 9700 3100
+Text GLabel 9700 3100 1    50   Input ~ 0
+CON_SCAN_4
+Text GLabel 9600 3100 1    50   Input ~ 0
+CON_SCAN_3
+Text GLabel 9500 3100 1    50   Input ~ 0
+CON_SCAN_2
+Text GLabel 9400 3100 1    50   Input ~ 0
+CON_SCAN_1
+Text GLabel 9300 3100 1    50   Input ~ 0
+CON_DATA_8
+Text GLabel 9200 3100 1    50   Input ~ 0
+CON_DATA_7
+Text GLabel 9100 3100 1    50   Input ~ 0
+CON_DATA_6
+Text GLabel 9000 3100 1    50   Input ~ 0
+CON_DATA_5
+Text GLabel 8900 3100 1    50   Input ~ 0
+CON_DATA_4
+Text GLabel 8800 3100 1    50   Input ~ 0
+CON_DATA_3
+Text GLabel 8700 3100 1    50   Input ~ 0
+CON_DATA_2
+Text GLabel 8600 3100 1    50   Input ~ 0
+CON_DATA_1
+NoConn ~ 2300 6800
+NoConn ~ 11750 5700
+Text GLabel 11750 5700 2    50   Input ~ 0
+G23
+NoConn ~ 7350 2700
+Text GLabel 7600 3700 2    50   Input ~ 0
+PEDAL
+Wire Wire Line
+	7450 3700 7600 3700
+Wire Wire Line
+	5450 8000 5400 8000
 Wire Wire Line
 	10600 8000 10600 8350
 Wire Wire Line
-	2850 8350 4150 8350
+	10600 8350 9300 8350
 Wire Wire Line
-	4150 8000 4150 8350
-Connection ~ 4150 8350
+	9300 8350 9300 8000
+Connection ~ 9300 8350
 Wire Wire Line
-	13900 7650 14200 7650
+	8050 8350 9300 8350
 Wire Wire Line
-	14200 7750 13900 7750
+	8050 8000 8050 8350
+Connection ~ 8050 8350
 Wire Wire Line
-	13900 7850 14200 7850
+	8050 8350 6750 8350
 Wire Wire Line
-	14200 7950 13900 7950
+	6750 8350 6750 8000
+Connection ~ 6750 8350
 Wire Wire Line
-	13900 8050 14200 8050
-Wire Wire Line
-	14200 8150 13900 8150
-Wire Wire Line
-	13900 8250 14200 8250
-Wire Wire Line
-	14200 8350 13900 8350
-Wire Wire Line
-	13900 8450 14200 8450
-Wire Wire Line
-	14200 8550 13900 8550
-Wire Wire Line
-	13900 8650 14200 8650
-Wire Wire Line
-	13900 8750 14200 8750
-Text GLabel 14200 8750 2    50   Input ~ 0
-CON_SCAN_4
-Text GLabel 14200 8650 2    50   Input ~ 0
-CON_SCAN_3
-Text GLabel 14200 8550 2    50   Input ~ 0
-CON_SCAN_2
-Text GLabel 14200 8450 2    50   Input ~ 0
-CON_SCAN_1
-Text GLabel 14200 8350 2    50   Input ~ 0
-CON_DATA_8
-Text GLabel 14200 8250 2    50   Input ~ 0
-CON_DATA_7
-Text GLabel 14200 8150 2    50   Input ~ 0
-CON_DATA_6
-Text GLabel 14200 8050 2    50   Input ~ 0
-CON_DATA_5
-Text GLabel 14200 7950 2    50   Input ~ 0
-CON_DATA_4
-Text GLabel 14200 7850 2    50   Input ~ 0
-CON_DATA_3
-Text GLabel 14200 7750 2    50   Input ~ 0
-CON_DATA_2
-Text GLabel 14200 7650 2    50   Input ~ 0
-CON_DATA_1
-Text GLabel 10600 3650 1    50   Input ~ 0
-CON_SCAN_4
-Text GLabel 10700 3650 1    50   Input ~ 0
-CON_SCAN_3
-Text GLabel 10800 3650 1    50   Input ~ 0
-CON_SCAN_2
-Text GLabel 10900 3650 1    50   Input ~ 0
-CON_SCAN_1
-Text GLabel 11000 3650 1    50   Input ~ 0
-CON_DATA_8
-Text GLabel 11100 3650 1    50   Input ~ 0
-CON_DATA_7
-Text GLabel 11200 3650 1    50   Input ~ 0
-CON_DATA_6
-Text GLabel 11300 3650 1    50   Input ~ 0
-CON_DATA_5
-Text GLabel 11400 3650 1    50   Input ~ 0
-CON_DATA_4
-Text GLabel 11500 3650 1    50   Input ~ 0
-CON_DATA_3
-Text GLabel 11600 3650 1    50   Input ~ 0
-CON_DATA_2
-Text GLabel 11700 3650 1    50   Input ~ 0
-CON_DATA_1
-Wire Wire Line
-	11700 3650 11700 3800
-Wire Wire Line
-	11600 3800 11600 3650
-Wire Wire Line
-	11500 3650 11500 3800
-Wire Wire Line
-	11400 3800 11400 3650
-Wire Wire Line
-	11300 3650 11300 3800
-Wire Wire Line
-	11200 3800 11200 3650
-Wire Wire Line
-	11100 3650 11100 3800
-Wire Wire Line
-	11000 3800 11000 3650
-NoConn ~ 11300 4600
-NoConn ~ 11400 4600
-NoConn ~ 2300 7150
-NoConn ~ 11950 6800
-Text GLabel 11950 6800 2    50   Input ~ 0
-G23
-NoConn ~ 12800 5850
-Wire Wire Line
-	4150 8350 5400 8350
-Wire Wire Line
-	5450 8000 5400 8000
+	5400 8350 6750 8350
 Wire Wire Line
 	5400 8000 5400 8350
 Connection ~ 5400 8350
 Wire Wire Line
-	5400 8350 6750 8350
+	4150 8350 5400 8350
 Wire Wire Line
-	9200 3700 9450 3700
+	4150 8000 4150 8350
+Connection ~ 4150 8350
+Connection ~ 1550 8000
 Wire Wire Line
-	9500 4200 9450 4200
+	1550 8350 1550 8000
 Wire Wire Line
-	9450 4200 9450 3700
-Connection ~ 9450 3700
+	2850 8350 4150 8350
 Wire Wire Line
-	9450 3700 9700 3700
+	1550 8350 2850 8350
+Connection ~ 2850 8350
 Wire Wire Line
-	9850 6650 9700 6650
+	2850 8000 2850 8350
+Wire Wire Line
+	1350 8000 1550 8000
+Text GLabel 1350 8000 0    50   Input ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FC5BE3B
+P 7600 2800
+F 0 "#FLG0102" H 7600 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 7600 2973 50  0000 C CNN
+F 2 "" H 7600 2800 50  0001 C CNN
+F 3 "~" H 7600 2800 50  0001 C CNN
+	1    7600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2800 7600 2800
+Connection ~ 7450 2800
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5FCB95FB
+P 7250 3700
+F 0 "J4" H 7358 3881 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 7358 3790 50  0000 C CNN
+F 2 "" H 7250 3700 50  0001 C CNN
+F 3 "~" H 7250 3700 50  0001 C CNN
+	1    7250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FD703F0
+P 7550 3900
+F 0 "#PWR03" H 7550 3650 50  0001 C CNN
+F 1 "GND" H 7555 3727 50  0000 C CNN
+F 2 "" H 7550 3900 50  0001 C CNN
+F 3 "" H 7550 3900 50  0001 C CNN
+	1    7550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3800 7550 3800
+Wire Wire Line
+	7550 3800 7550 3900
+$Comp
+L dk_Logic-Shift-Registers:74HC595D_118 U2
+U 1 1 5F57329D
+P 3200 6300
+F 0 "U2" H 3250 6603 60  0000 C CNN
+F 1 "74HC595D_118" H 3250 6497 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-16_W3.90mm" H 3400 6500 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 3400 6600 60  0001 L CNN
+F 4 "1727-2821-1-ND" H 3400 6700 60  0001 L CNN "Digi-Key_PN"
+F 5 "74HC595D,118" H 3400 6800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3400 6900 60  0001 L CNN "Category"
+F 7 "Logic - Shift Registers" H 3400 7000 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 3400 7100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/74HC595D,118/1727-2821-1-ND/763394" H 3400 7200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC SHIFT REGISTER 8BIT 16SOIC" H 3400 7300 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 3400 7400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3400 7500 60  0001 L CNN "Status"
+	1    3200 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 6900 4700 6300
+Wire Wire Line
+	11050 6300 11050 7000
+Wire Wire Line
+	11050 7000 8500 7000
+Wire Wire Line
+	8500 7000 8500 6300
+Wire Wire Line
+	8500 7000 5900 7000
+Wire Wire Line
+	5900 7000 5900 6300
+Connection ~ 8500 7000
+Wire Wire Line
+	5900 7000 3300 7000
+Connection ~ 5900 7000
+Wire Wire Line
+	5400 6800 5400 7500
+Connection ~ 4700 6900
+Wire Wire Line
+	3300 7000 3300 6300
+Wire Wire Line
+	2100 6900 4700 6900
+Connection ~ 3300 7000
+Wire Wire Line
+	2100 6300 2100 6900
+Wire Wire Line
+	1950 7000 3300 7000
+Wire Wire Line
+	1950 6300 2100 6300
+Connection ~ 2100 6300
+Text GLabel 1950 6300 0    50   Input ~ 0
+GND
+Text GLabel 1950 7000 0    50   Input ~ 0
+5V
+Wire Wire Line
+	9850 6900 9850 6300
+Connection ~ 7300 6900
+Wire Wire Line
+	7300 6900 4700 6900
+Wire Wire Line
+	7300 6900 7300 6300
+Wire Wire Line
+	7300 6900 9850 6900
+Wire Wire Line
+	3450 3400 3650 3400
+Connection ~ 3450 3400
+Wire Wire Line
+	3150 3400 3450 3400
+Wire Wire Line
+	3450 3900 3450 3400
+NoConn ~ 4950 3500
+NoConn ~ 5050 3500
+NoConn ~ 5150 3500
+Wire Wire Line
+	5250 3350 5250 3500
+Text GLabel 5250 3350 1    50   Input ~ 0
+PEDAL
+Wire Wire Line
+	5350 3500 5350 3350
+Wire Wire Line
+	5450 3350 5450 3500
+Wire Wire Line
+	5550 3500 5550 3350
+Wire Wire Line
+	5650 3350 5650 3500
+NoConn ~ 5350 4300
+NoConn ~ 5250 4300
+Wire Wire Line
+	4150 3500 4150 3350
+Wire Wire Line
+	4250 3350 4250 3500
+Wire Wire Line
+	4350 3500 4350 3350
+Wire Wire Line
+	4450 3350 4450 3500
+Wire Wire Line
+	4550 3500 4550 3350
+Wire Wire Line
+	4650 3350 4650 3500
+Wire Wire Line
+	4750 3500 4750 3350
+Wire Wire Line
+	4850 3350 4850 3500
+Text GLabel 4850 3350 1    50   Input ~ 0
+CON_DATA_1
+Text GLabel 4750 3350 1    50   Input ~ 0
+CON_DATA_2
+Text GLabel 4650 3350 1    50   Input ~ 0
+CON_DATA_3
+Text GLabel 4550 3350 1    50   Input ~ 0
+CON_DATA_4
+Text GLabel 4450 3350 1    50   Input ~ 0
+CON_DATA_5
+Text GLabel 4350 3350 1    50   Input ~ 0
+CON_DATA_6
+Text GLabel 4250 3350 1    50   Input ~ 0
+CON_DATA_7
+Text GLabel 4150 3350 1    50   Input ~ 0
+CON_DATA_8
+Text GLabel 5650 3350 1    50   Input ~ 0
+CON_SCAN_1
+Text GLabel 5550 3350 1    50   Input ~ 0
+CON_SCAN_2
+Text GLabel 5450 3350 1    50   Input ~ 0
+CON_SCAN_3
+Text GLabel 5350 3350 1    50   Input ~ 0
+CON_SCAN_4
+Connection ~ 5950 3900
+Wire Wire Line
+	6100 3900 5950 3900
+Text GLabel 3150 3400 0    50   Input ~ 0
+GND
+Text GLabel 6100 3900 2    50   Input ~ 0
+5V
+Wire Wire Line
+	4050 3500 4050 3350
+Wire Wire Line
+	3950 3500 3950 3350
+Text GLabel 4050 3350 1    50   Input ~ 0
+SDA
+Text GLabel 3950 3350 1    50   Input ~ 0
+SCK
+$Comp
+L dk_Interface-I-O-Expanders:MCP23017-E_SO U7
+U 1 1 5F52FA87
+P 5050 3800
+F 0 "U7" H 5150 1997 60  0000 C CNN
+F 1 "MCP23017-E_SO" H 5150 2103 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-28_W7.5mm" H 5250 4000 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023709" H 5250 4100 60  0001 L CNN
+F 4 "MCP23017-E/SO-ND" H 5250 4200 60  0001 L CNN "Digi-Key_PN"
+F 5 "MCP23017-E/SO" H 5250 4300 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 5250 4400 60  0001 L CNN "Category"
+F 7 "Interface - I/O Expanders" H 5250 4500 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023709" H 5250 4600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/MCP23017-E-SO/MCP23017-E-SO-ND/894271" H 5250 4700 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC I/O EXPANDER I2C 16B 28SOIC" H 5250 4800 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 5250 4900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5250 5000 60  0001 L CNN "Status"
+	1    5050 3800
+	0    1    1    0   
+$EndComp
+Connection ~ 3650 3400
+Wire Wire Line
+	5450 4400 5450 4300
+Wire Wire Line
+	5950 4400 5450 4400
+Wire Wire Line
+	5950 3900 5950 4400
+Wire Wire Line
+	5850 3900 5950 3900
+Wire Wire Line
+	3750 3400 3850 3400
+Connection ~ 3750 3400
+Wire Wire Line
+	3750 3500 3750 3400
+Wire Wire Line
+	3850 3400 3850 3500
+Wire Wire Line
+	3650 3400 3750 3400
+Wire Wire Line
+	3650 3500 3650 3400
 $EndSCHEMATC

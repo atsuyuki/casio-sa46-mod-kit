@@ -331,12 +331,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 8300 6950 8500
 Wire Wire Line
-	8050 8000 8050 8350
-Wire Wire Line
-	8050 8350 6750 8350
-Wire Wire Line
-	6750 8350 6750 8000
-Wire Wire Line
 	7850 8100 7850 8450
 Wire Wire Line
 	7850 8450 9150 8450
@@ -981,8 +975,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 8300 1750 8500
 Wire Wire Line
-	1550 8350 1550 8000
-Wire Wire Line
 	2650 8100 2650 8450
 Wire Wire Line
 	2650 8450 3950 8450
@@ -1303,10 +1295,6 @@ Wire Wire Line
 Wire Wire Line
 	9500 8300 9500 8500
 Wire Wire Line
-	10600 8350 9300 8350
-Wire Wire Line
-	9300 8350 9300 8000
-Wire Wire Line
 	10400 8100 10400 8450
 Wire Wire Line
 	10400 8450 11700 8450
@@ -1440,7 +1428,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 9700 1750 8900
 Connection ~ 4350 9700
-Connection ~ 6750 8350
 Wire Wire Line
 	3950 8450 5250 8450
 Connection ~ 3950 8450
@@ -1539,10 +1526,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 5750 2900 6250
 Connection ~ 5500 5750
-Wire Wire Line
-	8050 8350 9300 8350
-Connection ~ 8050 8350
-Connection ~ 9300 8350
 $Comp
 L Connector:Conn_01x05_Male J2
 U 1 1 5FA87EF8
@@ -1637,27 +1620,14 @@ Wire Wire Line
 	12800 5950 12900 5950
 Wire Wire Line
 	12900 5950 12900 6050
-Text GLabel 7200 6650 0    50   Input ~ 0
-GND
-Text GLabel 9700 6650 0    50   Input ~ 0
-GND
-Text GLabel 4550 6650 0    50   Input ~ 0
-GND
-Text GLabel 2100 6650 0    50   Input ~ 0
-GND
 Text GLabel 3300 6650 2    50   Input ~ 0
 5V
 Text GLabel 8750 6650 2    50   Input ~ 0
 5V
 Text GLabel 11300 6650 2    50   Input ~ 0
 5V
-Text GLabel 1350 8000 0    50   Input ~ 0
-GND
 Text GLabel 1350 8450 0    50   Input ~ 0
 5V
-Wire Wire Line
-	1350 8000 1550 8000
-Connection ~ 1550 8000
 Wire Wire Line
 	1350 8450 2650 8450
 Connection ~ 2650 8450
@@ -1919,30 +1889,14 @@ Wire Wire Line
 	13150 7750 13400 7750
 Wire Wire Line
 	13400 7650 13150 7650
-Wire Wire Line
-	4550 6650 4700 6650
 Text GLabel 6100 6650 2    50   Input ~ 0
 5V
 Wire Wire Line
 	5900 6650 6100 6650
 Wire Wire Line
-	7200 6650 7300 6650
-Wire Wire Line
 	8750 6650 8500 6650
 Wire Wire Line
 	11300 6650 11050 6650
-Wire Wire Line
-	1550 8350 2850 8350
-Wire Wire Line
-	2850 8000 2850 8350
-Connection ~ 2850 8350
-Wire Wire Line
-	10600 8000 10600 8350
-Wire Wire Line
-	2850 8350 4150 8350
-Wire Wire Line
-	4150 8000 4150 8350
-Connection ~ 4150 8350
 Wire Wire Line
 	13900 7650 14200 7650
 Wire Wire Line
@@ -1991,46 +1945,46 @@ Text GLabel 14200 7750 2    50   Input ~ 0
 CON_DATA_2
 Text GLabel 14200 7650 2    50   Input ~ 0
 CON_DATA_1
-Text GLabel 10600 3650 1    50   Input ~ 0
-CON_SCAN_4
-Text GLabel 10700 3650 1    50   Input ~ 0
-CON_SCAN_3
-Text GLabel 10800 3650 1    50   Input ~ 0
-CON_SCAN_2
-Text GLabel 10900 3650 1    50   Input ~ 0
-CON_SCAN_1
-Text GLabel 11000 3650 1    50   Input ~ 0
-CON_DATA_8
-Text GLabel 11100 3650 1    50   Input ~ 0
-CON_DATA_7
-Text GLabel 11200 3650 1    50   Input ~ 0
-CON_DATA_6
-Text GLabel 11300 3650 1    50   Input ~ 0
-CON_DATA_5
 Text GLabel 11400 3650 1    50   Input ~ 0
-CON_DATA_4
+CON_SCAN_4
 Text GLabel 11500 3650 1    50   Input ~ 0
-CON_DATA_3
+CON_SCAN_3
 Text GLabel 11600 3650 1    50   Input ~ 0
-CON_DATA_2
+CON_SCAN_2
 Text GLabel 11700 3650 1    50   Input ~ 0
+CON_SCAN_1
+Text GLabel 10200 3650 1    50   Input ~ 0
+CON_DATA_8
+Text GLabel 10300 3650 1    50   Input ~ 0
+CON_DATA_7
+Text GLabel 10400 3650 1    50   Input ~ 0
+CON_DATA_6
+Text GLabel 10500 3650 1    50   Input ~ 0
+CON_DATA_5
+Text GLabel 10600 3650 1    50   Input ~ 0
+CON_DATA_4
+Text GLabel 10700 3650 1    50   Input ~ 0
+CON_DATA_3
+Text GLabel 10800 3650 1    50   Input ~ 0
+CON_DATA_2
+Text GLabel 10900 3650 1    50   Input ~ 0
 CON_DATA_1
 Wire Wire Line
-	11700 3650 11700 3800
+	10900 3650 10900 3800
 Wire Wire Line
-	11600 3800 11600 3650
+	10800 3800 10800 3650
 Wire Wire Line
-	11500 3650 11500 3800
+	10700 3650 10700 3800
 Wire Wire Line
-	11400 3800 11400 3650
+	10600 3800 10600 3650
 Wire Wire Line
-	11300 3650 11300 3800
+	10500 3650 10500 3800
 Wire Wire Line
-	11200 3800 11200 3650
+	10400 3800 10400 3650
 Wire Wire Line
-	11100 3650 11100 3800
+	10300 3650 10300 3800
 Wire Wire Line
-	11000 3800 11000 3650
+	10200 3800 10200 3650
 NoConn ~ 11300 4600
 NoConn ~ 11400 4600
 NoConn ~ 2300 7150
@@ -2039,23 +1993,126 @@ Text GLabel 11950 6800 2    50   Input ~ 0
 G23
 NoConn ~ 12800 5850
 Wire Wire Line
-	4150 8350 5400 8350
+	11700 3650 11700 3800
+Wire Wire Line
+	11600 3800 11600 3650
+Wire Wire Line
+	11500 3650 11500 3800
+Wire Wire Line
+	11400 3800 11400 3650
+Text GLabel 11300 3650 1    50   Input ~ 0
+PEDAL
+Wire Wire Line
+	11300 3650 11300 3800
+NoConn ~ 11200 3800
+NoConn ~ 11100 3800
+NoConn ~ 11000 3800
+Text GLabel 13650 4000 2    50   Input ~ 0
+PEDAL
+Wire Wire Line
+	13500 4000 13650 4000
+Wire Wire Line
+	9500 4200 9500 3700
+Wire Wire Line
+	9200 3700 9500 3700
+Connection ~ 9500 3700
+Wire Wire Line
+	9500 3700 9700 3700
 Wire Wire Line
 	5450 8000 5400 8000
+Wire Wire Line
+	10600 8000 10600 8350
+Wire Wire Line
+	10600 8350 9300 8350
+Wire Wire Line
+	9300 8350 9300 8000
+Connection ~ 9300 8350
+Wire Wire Line
+	8050 8350 9300 8350
+Wire Wire Line
+	8050 8000 8050 8350
+Connection ~ 8050 8350
+Wire Wire Line
+	8050 8350 6750 8350
+Wire Wire Line
+	6750 8350 6750 8000
+Connection ~ 6750 8350
+Wire Wire Line
+	5400 8350 6750 8350
 Wire Wire Line
 	5400 8000 5400 8350
 Connection ~ 5400 8350
 Wire Wire Line
-	5400 8350 6750 8350
+	4150 8350 5400 8350
 Wire Wire Line
-	9200 3700 9450 3700
+	4150 8000 4150 8350
+Connection ~ 4150 8350
+Connection ~ 1550 8000
 Wire Wire Line
-	9500 4200 9450 4200
+	1550 8350 1550 8000
 Wire Wire Line
-	9450 4200 9450 3700
-Connection ~ 9450 3700
+	2850 8350 4150 8350
 Wire Wire Line
-	9450 3700 9700 3700
+	1550 8350 2850 8350
+Connection ~ 2850 8350
+Wire Wire Line
+	2850 8000 2850 8350
+Wire Wire Line
+	1350 8000 1550 8000
+Wire Wire Line
+	7200 6650 7300 6650
+Text GLabel 7200 6650 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4550 6650 4700 6650
+Text GLabel 4550 6650 0    50   Input ~ 0
+GND
+Text GLabel 2100 6650 0    50   Input ~ 0
+GND
+Text GLabel 1350 8000 0    50   Input ~ 0
+GND
 Wire Wire Line
 	9850 6650 9700 6650
+Text GLabel 9700 6650 0    50   Input ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FC5BE3B
+P 13050 5950
+F 0 "#FLG0102" H 13050 6025 50  0001 C CNN
+F 1 "PWR_FLAG" H 13050 6123 50  0000 C CNN
+F 2 "" H 13050 5950 50  0001 C CNN
+F 3 "~" H 13050 5950 50  0001 C CNN
+	1    13050 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 5950 13050 5950
+Connection ~ 12900 5950
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5FCB95FB
+P 13300 4000
+F 0 "J?" H 13408 4181 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 13408 4090 50  0000 C CNN
+F 2 "" H 13300 4000 50  0001 C CNN
+F 3 "~" H 13300 4000 50  0001 C CNN
+	1    13300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD703F0
+P 13600 4200
+F 0 "#PWR?" H 13600 3950 50  0001 C CNN
+F 1 "GND" H 13605 4027 50  0000 C CNN
+F 2 "" H 13600 4200 50  0001 C CNN
+F 3 "" H 13600 4200 50  0001 C CNN
+	1    13600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 4100 13600 4100
+Wire Wire Line
+	13600 4100 13600 4200
 $EndSCHEMATC
