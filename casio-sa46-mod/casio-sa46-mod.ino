@@ -144,25 +144,48 @@ uint32_t arp_time;
 int arp_note_length = 100;
 int arp_count = 0;
 int arp_pre_note;
+
+int arp_notes[32] = {
+  0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0
+};
+
 // アルペジエーター
 void arpeggiator()
 {
 
-  // キー && 出音 == true
-  Serial.print(arp_count);
-  Serial.print(" ");
-  //  Serial.print(out_keys >> arp_count & 1, BIN);
-
-  if (arp_count < 32) {
-    while (!(out_keys >> arp_count & 1)) {
-
-      Serial.print(".");
-      arp_count++;
+  int counter = 0;
+  for (int i = 0; i < 32;) {
+    if (out_keys >> i & 1) {
+      arp_notes[counter] = i;
+      counter++;
     }
-  } else {
-    arp_count = 0;
-    Serial.println();
   }
+
+  if (out_keys != 0) {} // キーが1つ以上押されているか？　偽ならなにもしない
+  if (arp_count > 0 && arp_keys[arp_count] != 0) {} // 配列のデータ範囲内か？　偽ならarp_stepを反転する
+  if ((millis() - arp_time) < arp_note_length) {} // 時間内か？　偽ならステップを進めるarp_count += arp_step;
+  out_keys = 1 << arp_keys[arp_count];
+
+  /*
+    // キー && 出音 == true
+    Serial.print(arp_count);
+    Serial.print(" ");
+    //  Serial.print(out_keys >> arp_count & 1, BIN);
+
+    if (arp_count < 32) {
+      while (!(out_keys >> arp_count & 1)) {
+
+        Serial.print(".");
+        arp_count++;
+      }
+    } else {
+      arp_count = 0;
+      Serial.println();
+    }
+  */
 
   /*
     if (out_keys >> arp_count & 1) {
