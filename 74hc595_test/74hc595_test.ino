@@ -1,5 +1,10 @@
 #include <M5Atom.h>
 
+#include <Wire.h>
+#include "Adafruit_MCP23017.h"
+
+Adafruit_MCP23017 mcp;
+
 /*
    74HC595
    SER : 2
@@ -22,15 +27,42 @@ void setup() {
 
 void loop() {
 
-  for (int j = 32; j > 0; j--) {
+  /*
+    for (int j = 32; j > 0; j--) {
+      digitalWrite(RCLK, LOW);
+      int bindata = 0xffffffff ^ 0b10001001 << j;
+      shiftOut(SER, SRCLK, LSBFIRST, bindata);
+      shiftOut(SER, SRCLK, LSBFIRST, bindata >> 8);
+      shiftOut(SER, SRCLK, LSBFIRST, bindata >> 16);
+      shiftOut(SER, SRCLK, LSBFIRST, bindata >> 24);
+      Serial.println(bindata, BIN);
+      digitalWrite(RCLK, HIGH);
+      delay(300);
+    }
+  */
+  for (int j = 11; j < 0xffffffff; j*=3) {
     digitalWrite(RCLK, LOW);
-    int bindata = 0xffffffffffff ^ 1 << j;
+    int bindata = j;
     shiftOut(SER, SRCLK, LSBFIRST, bindata);
     shiftOut(SER, SRCLK, LSBFIRST, bindata >> 8);
     shiftOut(SER, SRCLK, LSBFIRST, bindata >> 16);
     shiftOut(SER, SRCLK, LSBFIRST, bindata >> 24);
     Serial.println(bindata, BIN);
     digitalWrite(RCLK, HIGH);
-    delay(300);
+    delay(100);
   }
+  /*
+    for (int j = 32; j > 0; j--) {
+      digitalWrite(RCLK, LOW);
+      int bindata = 0x000000000000 ^ 0x49 << j;
+      shiftOut(SER, SRCLK, LSBFIRST, bindata);
+      shiftOut(SER, SRCLK, LSBFIRST, bindata >> 8);
+      shiftOut(SER, SRCLK, LSBFIRST, bindata >> 16);
+      shiftOut(SER, SRCLK, LSBFIRST, bindata >> 24);
+      Serial.println(bindata, BIN);
+      digitalWrite(RCLK, HIGH);
+      delay(10);
+    }
+  */
+  delay(200);
 }
