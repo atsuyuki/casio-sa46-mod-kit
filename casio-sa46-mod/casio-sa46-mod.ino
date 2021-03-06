@@ -21,11 +21,12 @@ int const SER = 33;
 int const RCLK = 19;
 int const SRCLK = 22;
 
+boolean sustain_mode;
 
 void setup()
 {
   Wire.begin(21, 25);
-  mcp.begin(0); // use default address 0
+  mcp.begin(0,&Wire); // use default address 0
 
   for (int i = 0; i < 4; i++)
   {
@@ -44,6 +45,12 @@ void setup()
   pinMode(RCLK, OUTPUT);
   pinMode(SRCLK, OUTPUT);
   Serial.begin(115200);
+
+  // sustain_mode切り替え入れる
+  if (!mcp.digitalRead(pedal)) {
+    sustain_mode = !mcp.digitalRead(pedal);
+    Serial.println("Sustain mode on.");
+  }
 }
 
 uint32_t pre_keys;
@@ -60,30 +67,35 @@ void loop()
   pre_keys = cur_keys;
   cur_keys = keysRead();
 
-  pedal_state = mcp.digitalRead(pedal);
+  if (sustain_mode) {
+    pedal_state = mcp.digitalRead(pedal);
 
-  // サステインペダル処理
-  // ペダルONなら前回値、ペダルOFFなら更新
-  if (!pedal_state) {
-    sus_keys = cur_keys;
+    // サステインペダル処理
+    // ペダルONなら前回値、ペダルOFFなら更新
+    if (pedal_state) {
+      sus_keys = sus_keys | cur_keys;
+    } else {
+      sus_keys = cur_keys;
+    }
+
+    // ペダルONの間は
+    //out_keys = pre_keys & ~cur_keys & ~sus_keys | cur_keys & sus_keys;
+    //    out_keys = cur_keys | sus_keys;
+
+
+    /*
+      ~bc + b~c + ac
+      ~bc + b~c + ab
+      ~b & c | b & ~c | a & c
+
+      a = pre_keys;
+      b = cur_keys;
+      c = sus_keys;
+    */
+    out_keys = ~cur_keys & sus_keys | cur_keys & ~sus_keys | pre_keys & sus_keys;
+  } else {
+    out_keys = cur_keys;
   }
-
-  // ペダルONの間は
-  //out_keys = pre_keys & ~cur_keys & ~sus_keys | cur_keys & sus_keys;
-  //out_keys = cur_keys & sus_keys;
-
-
-  /*
-    ~bc + b~c + ac
-    ~bc + b~c + ab
-    ~b & c | b & ~c | a & c
-
-    a = pre_keys;
-    b = cur_keys;
-    c = sus_keys;
-  */
-  out_keys = ~cur_keys & sus_keys | cur_keys & ~sus_keys | pre_keys & sus_keys;
-
 
   // Serial.print(cur_keys, BIN);
   // Serial.print(" ");
@@ -91,7 +103,7 @@ void loop()
   //  delay(500);
 
   // ここにアルペジエーターなど入れる
-  if (false)
+  if (true)
   {
     arpeggiator();
   }
@@ -152,23 +164,31 @@ int arp_notes[32] = {
   0, 0, 0, 0, 0, 0, 0, 0
 };
 
+int arp_step = 1;
+
 // アルペジエーター
 void arpeggiator()
 {
-
-  int counter = 0;
-  for (int i = 0; i < 32;) {
-    if (out_keys >> i & 1) {
-      arp_notes[counter] = i;
-      counter++;
+  if (out_keys > 0) { // キーが1つ以上押されているか？　偽ならなにもしない
+    Serial.println("srp on");
+    int counter = 0;
+    for (int i = 0; i < 32;) {
+      Serial.println(out_keys);
+      if (out_keys >> i & 1) {
+        arp_notes[counter] = i;
+        counter++;
+        Serial.print(counter);
+      }
     }
+    if ((millis() - arp_time) < arp_note_length) { // 時間内か？　偽ならステップを進める
+      if (arp_count > 0 && arp_notes[arp_count] != 0) { // 配列のデータ範囲内か？　偽ならarp_stepを反転する
+        arp_step = -arp_step;
+      }
+      arp_count += arp_step;
+    }
+
+    out_keys = 1 << arp_notes[arp_count];
   }
-
-  if (out_keys != 0) {} // キーが1つ以上押されているか？　偽ならなにもしない
-  if (arp_count > 0 && arp_keys[arp_count] != 0) {} // 配列のデータ範囲内か？　偽ならarp_stepを反転する
-  if ((millis() - arp_time) < arp_note_length) {} // 時間内か？　偽ならステップを進めるarp_count += arp_step;
-  out_keys = 1 << arp_keys[arp_count];
-
   /*
     // キー && 出音 == true
     Serial.print(arp_count);
@@ -231,7 +251,6 @@ void arpeggiator()
 }
 
 
-int arp_step = -1;
 // アルペジエーター進める
 void arpProc()
 {
